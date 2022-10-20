@@ -19,7 +19,7 @@ const HeaderFull = (props) => {
               <Link href="/profile">
                 <a className="header-full-link2 large">Profile</a>
               </Link>
-              <Link href="/coming-soon">
+              <Link href="/privacy-policy">
                 <a className="header-full-link3 large">Coming Soon</a>
               </Link>
             </div>
