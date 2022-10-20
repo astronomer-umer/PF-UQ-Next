@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class CustomDocument extends Document {
   render() {
@@ -11,6 +11,7 @@ class CustomDocument extends Document {
           ></meta>
           <meta charSet="utf-8"></meta>
           <meta property="twitter:card" content="summary_large_image"></meta>
+          <link rel="manifest" href="/manifest.json" />
           <style
             dangerouslySetInnerHTML={{
               __html:
@@ -21,7 +22,7 @@ class CustomDocument extends Document {
           <style
             dangerouslySetInnerHTML={{
               __html:
-                '\n  html {\n    font-family: Open Sans;\n    font-size: 1rem;\n  }\n\n  body {\n    font-weight: 400;\n    font-style:normal;\n    text-decoration: none;\n    text-transform: none;\n    letter-spacing: normal;\n    line-height: 1.625;\n    color: var(--dl-color-secondary-400);\n    background-color: var(--dl-color-gray-white);\n    \n  }\n\n  \n\n  ',
+                "\n  html {\n    font-family: Open Sans;\n    font-size: 1rem;\n  }\n\n  body {\n    font-weight: 400;\n    font-style:normal;\n    text-decoration: none;\n    text-transform: none;\n    letter-spacing: normal;\n    line-height: 1.625;\n    color: var(--dl-color-secondary-400);\n    background-color: var(--dl-color-gray-white);\n    \n  }\n\n  \n\n  ",
             }}
             data-tag="default-style-sheet"
           ></style>
@@ -44,9 +45,10 @@ class CustomDocument extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html:
-                '</noscript><style>\nhtml * {\n    -webkit-font-smoothing: antialiased;\n}\ninput::placeholder, textarea::placeholder {\n   color: #d2d6da;\n}\n</style><noscript>',
+                "</noscript><style>\nhtml * {\n    -webkit-font-smoothing: antialiased;\n}\ninput::placeholder, textarea::placeholder {\n   color: #d2d6da;\n}\n</style><noscript>",
             }}
           ></noscript>
+          <script src="./pwabuilder-sw.js" async defer></script>
         </Head>
         <body>
           <Main></Main>
@@ -59,8 +61,8 @@ class CustomDocument extends Document {
           ></div>
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default CustomDocument
+export default CustomDocument;
