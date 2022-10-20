@@ -48,7 +48,7 @@ class CustomDocument extends Document {
                 "</noscript><style>\nhtml * {\n    -webkit-font-smoothing: antialiased;\n}\ninput::placeholder, textarea::placeholder {\n   color: #d2d6da;\n}\n</style><noscript>",
             }}
           ></noscript>
-          <script src="./pwabuilder-sw.js"></script>
+          <script src="./sw.js"></script>
         </Head>
         <body>
           <Main></Main>
